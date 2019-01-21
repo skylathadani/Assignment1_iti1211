@@ -179,7 +179,27 @@ public class Deck {
 		this.sortByRank();
 	}
 
-	/*public static void main(String[] args) {
+	public String toString(){
+		String a = "";
+
+		for(int i = 0; i < this.cards.size();i++){
+
+			if(i != this.cards.size()-1){
+				a = a + this.cards.get(i) + "," ;
+
+			}else{
+				a = a + this.cards.get(i);
+			}
+
+			
+
+		}
+
+		return a;
+
+	}
+
+	public static void main(String[] args) {
 		Deck n = new Deck();
 		Card a = new Card(1,3);
 		Card b = new Card(1,4);
@@ -203,5 +223,6 @@ public class Deck {
 
 		System.out.println(h);
 		System.out.println(j);
-	}*/
+		System.out.println(n);
+	}
 }

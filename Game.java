@@ -15,7 +15,7 @@ public class Game {
 		int round = 1;
 		main.shuffle();
 		hand =  main.deal(7);
-		while(hand.size() < 0) {
+		while(hand.size() > 0) {
 			d.roll();
 			hand.print();
 			if(d.getValue() == 1){
@@ -43,8 +43,9 @@ public class Game {
 					hand.addAll(main);
 				}
 				boolean contDiscard = true;
-				boolean flag = false;
-				while (contDiscard = true) {
+				
+				while (contDiscard == true) {
+					boolean flag = false;
 					while(flag == false) { 
 						Deck s = Utils.readCards("Please enter cards to form a meld");
 						if(hand.containsAll(s)){
@@ -61,6 +62,8 @@ public class Game {
 						}	
 					}
 					contDiscard = Utils.readYesOrNo("Do you have any more melds to discard?");
+					System.out.println(contDiscard);
+
 				}
 				round++;
 			}

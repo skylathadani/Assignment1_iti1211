@@ -174,6 +174,14 @@ public class Deck {
 				if(x1.suit < x2.suit){
 					return -1;
 				}
+				if(x1.suit == x2.suit) {
+					if(x1.rank > x2.rank){
+						return 1;
+					}
+					if(x1.rank < x2.rank){
+						return -1;
+					}
+				}
 				return 0;
 			}
 		});

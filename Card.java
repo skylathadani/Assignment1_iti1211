@@ -2,6 +2,11 @@ public class Card{
 	//create the variables that card objects hold
 	int suit;
 	int rank;
+	public static final int DIAMOND = 0;
+	public static final int CLUB = 1;
+	public static final int HEART = 2;
+	public static final int SPADE = 3;
+
 
 
 	public Card(int s,int r){

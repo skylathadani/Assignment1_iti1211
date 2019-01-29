@@ -8,8 +8,8 @@ public class StudentInfo2 {
         System.out.println("*                                                          *");
         System.out.println("************************************************************");
         System.out.println();
-         System.out.println("************************************************************");
-        System.out.println("*Student Name: Skyla Thadani                                *");
+        System.out.println("************************************************************");
+        System.out.println("*Student Name: Skyla Thadani                               *");
         System.out.println("*Student ID:   300055455                                   *");
         System.out.println("*Section:      ITI 1121 C00                                *");
         System.out.println("*                                                          *");

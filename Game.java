@@ -19,6 +19,7 @@ public class Game {
 			d.roll();
 			System.out.println("Welcome to round " + round + " you rolled a " + d.getValue() + ".");
 			if(d.getValue() == 1){
+				hand.print();
 				System.out.println("Please choose a card to discard");
 				boolean b = false;
 				while(b == false){
@@ -45,6 +46,12 @@ public class Game {
 				while (contDiscard == true) {
 					hand.print();
 					boolean flag = false;
+					contDiscard = Utils.readYesOrNo("Do you have any melds to discard?");
+
+					if(contDiscard == false){
+						flag = true;
+					}
+
 					while(flag == false) { 
 						Deck s = Utils.readCards("Please enter cards to form a meld");
 						if(hand.containsAll(s)){
@@ -54,13 +61,21 @@ public class Game {
 							}	
 							else{
 								System.out.println("Invalid meld");
+								contDiscard = Utils.readYesOrNo("Do you have any more melds to discard?");
+								if(contDiscard == false){
+									flag = true;
+								}
 							}	
 						}
 						else{
 							System.out.println("Invalid meld");
+							contDiscard = Utils.readYesOrNo("Do you have any more melds to discard?");
+							if(contDiscard==false){
+								flag = true;
+							}
 						}	
 					}
-					contDiscard = Utils.readYesOrNo("Do you have any more melds to discard?");
+					//contDiscard = Utils.readYesOrNo("Do you have any more melds to discard?");
 				}
 				round++;
 			}

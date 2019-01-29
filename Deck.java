@@ -143,7 +143,7 @@ public class Deck {
 		}
 		if(this.cards.size()>2){
 			Deck x = this;
-			x.sortByRank();
+			x.sortByRank_A();
 			for(int i = 0; i < x.cards.size()-1; i++){
 				Card x1 = x.cards.get(i);
 				Card x2 = x.cards.get(i+1);
@@ -208,6 +208,28 @@ public class Deck {
 		});
 		System.out.println(this.cards);
 	}
+
+	public void sortByRank_A() {
+		//sort the deck by the ranks of the cards
+
+		//use a custom comparator
+		Collections.sort(this.cards, new Comparator<Card>(){
+		@Override
+
+			//compare the ranks of the two cards
+			public int compare(Card x1, Card x2){
+				if(x1.rank > x2.rank){
+					return 1;
+				}
+				if(x1.rank < x2.rank){
+					return -1;
+				}
+				return 0;
+			}
+		});
+		//System.out.println(this.cards);
+	}
+
 
 	public void print() {
 		//print the deck in two ways: suit and then rank

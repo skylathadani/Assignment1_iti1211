@@ -24,6 +24,7 @@ public class Game {
 
 			}else{
 				System.out.println("Welcome to round " + round); 
+				//hand.print();
 				if(main.size()==0){
 					if(y == true){
 					y = Utils.readYesOrNo("Do you have any melds to discard?");
@@ -88,9 +89,14 @@ public class Game {
 					}
 
 					while(flag == false) { 
-						Deck s = Utils.readCards("Please enter cards to form a meld");
+						Deck s = new Deck();
+						s = Utils.readCards("Please enter cards to form a meld");
 						if(hand.containsAll(s)){
-							if(s.isKind() || s.isSeq()){
+							if(s.isKind()){
+								hand.removeAll(s);
+								flag = true;
+							}else if(s.isSeq()){
+								
 								hand.removeAll(s);
 								flag = true;
 							}	

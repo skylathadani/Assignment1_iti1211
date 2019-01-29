@@ -1,5 +1,5 @@
-@author Marcel Turcotte (marcel.turcotte@uottawa.ca)
-public class StudentInfo2 {
+//@author Marcel Turcotte (marcel.turcotte@uottawa.ca)
+public class StudentInfo {
 	public static void display() {
         System.out.println("************************************************************");
         System.out.println("*Student Name: Gregory Micthell                            *");

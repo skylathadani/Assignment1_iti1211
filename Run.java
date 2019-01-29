@@ -13,7 +13,7 @@ public class Run {
         boolean play, changeSize;
         int ranks;
 
-       // StudentInfo.display();
+       StudentInfo.display();
 
         System.out.println("Welcome to Single Player Rummy with Dice and strange deck.");
         System.out.println();

@@ -1,22 +1,30 @@
 import java.util.Scanner;
 
 public class Game {
-
+//initial variables
 	private Deck main;
 	private Deck hand;
 	private Die d;
 
 	public Game(int numRanks) {
+		//this is the constructor
 		this.main = new Deck(numRanks);
 		this.d = new Die();
 	}
 
 	public void play() {
+		//round counter
 		int round = 1;
 		boolean y = true;
+		//shuffle the main deck
 		main.shuffle();
+		//deal 7 cards from main deck to the hand
 		hand =  main.deal(7);
+
+
+		//main part of the game
 		while(hand.size() > 0) {
+			//roll the die
 			
 			d.roll();
 			if(main.size()!=0){
@@ -53,9 +61,10 @@ public class Game {
 
 			
 
-			
+			//if user rolled a 1
 			if(d.getValue() == 1 && main.size() !=0){
 				hand.print();
+				//remove a card
 				System.out.println("Please choose a card to discard");
 				boolean b = false;
 				while(b == false){
@@ -67,7 +76,9 @@ public class Game {
 				}
 				round++;
 			}	
+			//if user didnt roll a 1
 			else if(d.getValue() != 1 && main.size()!=0){
+				//add cards to the hand from the deck
 				if(d.getValue() < main.size()){
 					for(int i = 0; i < d.getValue(); i++) {
 						Card temp = main.get(main.size() - 1);
@@ -79,6 +90,8 @@ public class Game {
 					hand.addAll(main);
 				}
 				boolean contDiscard = true;
+
+				//ask if user can get rid of cards
 				while (contDiscard == true) {
 					hand.print();
 					boolean flag = false;
@@ -91,6 +104,7 @@ public class Game {
 					while(flag == false) { 
 						Deck s = new Deck();
 						s = Utils.readCards("Please enter cards to form a meld");
+						//see if the meld is valid -> remove the meld if it is
 						if(hand.containsAll(s)){
 							if(s.isKind()){
 								hand.removeAll(s);
@@ -121,6 +135,8 @@ public class Game {
 				round++;
 			}
 		}
+
+		//end the game
 
 		System.out.println("You have won the game in " + (round-1)+" rounds.");
 	}

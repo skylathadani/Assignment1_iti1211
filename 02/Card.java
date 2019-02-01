@@ -1,15 +1,23 @@
 /**
-* Author: Gregory Mitchell
+* @author: Gregory Mitchell
 * Student number: 300053307
 * Course: ITI 1121-A00
 * Assignment: 1
 
-* Author: Skyla Thadani
+* @author: Skyla Thadani
 * Student number: 300055455
 * Course: ITI 1121-C00
 * Assignment: 1
 */
 public class Card{
+	/**
+     * Creates a Card Object
+     *
+     * @param s an integer;
+     * @param r an integer;
+     * @param object an object of type Card;
+     * @return a new Card object with different properties
+     */
 	//create the variables that card objects hold
 	int suit;
 	int rank;

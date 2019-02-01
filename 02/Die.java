@@ -1,10 +1,10 @@
 /**
-* Author: Gregory Mitchell
+* @author: Gregory Mitchell
 * Student number: 300053307
 * Course: ITI 1121-A00
 * Assignment: 1
 
-* Author: Skyla Thadani
+* @author: Skyla Thadani
 * Student number: 300055455
 * Course: ITI 1121-C00
 * Assignment: 1
@@ -13,6 +13,11 @@
 import java.util.Random;
 
 public class Die {
+	/**
+     * Creates a Die object
+     * @return an object of type Die
+     */
+
 	
 	int difValue;
 	Random value = new Random();

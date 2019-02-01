@@ -1,10 +1,10 @@
 /**
-* Author: Gregory Mitchell
+* @author: Gregory Mitchell
 * Student number: 300053307
 * Course: ITI 1121-A00
 * Assignment: 1
 
-* Author: Skyla Thadani
+* @author: Skyla Thadani
 * Student number: 300055455
 * Course: ITI 1121-C00
 * Assignment: 1
@@ -15,6 +15,14 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class Deck {
+	/**
+     * Creates a Deck object
+     * @param range an integer;
+     * @param pos an integer;
+     * @param card a card object;
+     * @param other a Deck object;
+     * @return an object of type Deck
+     */
 
     private ArrayList<Card> cards;
 

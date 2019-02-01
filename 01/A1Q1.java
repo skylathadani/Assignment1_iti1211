@@ -9,7 +9,17 @@
 * Course: ITI 1121-C00
 * Assignment: 1
 */
-public class A1Q1.java{
+
+
+
+
+public class A1Q1{
+	/**
+     * Returns the number of positive elements in an array
+     *
+     * @param a1 an array of doubles;
+     * @return the number of positive elements
+     */
 	public static int countPositive(double a1[]){
 		int count = 0;
 

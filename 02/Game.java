@@ -1,10 +1,10 @@
 /**
-* Author: Gregory Mitchell
+* @author: Gregory Mitchell
 * Student number: 300053307
 * Course: ITI 1121-A00
 * Assignment: 1
 
-* Author: Skyla Thadani
+* @author: Skyla Thadani
 * Student number: 300055455
 * Course: ITI 1121-C00
 * Assignment: 1
@@ -14,6 +14,17 @@
 import java.util.Scanner;
 
 public class Game {
+	/**
+     * Runs the logic of the Rummy Game. Rolls a die and asks the user to discard cards
+     * if the discard card/meld is invalid, user is asked if they have a valid meld and 
+     * they must provide a valid meld
+     * Objective of the game is to discard all cards
+     * 
+     *@param numRanks an integer;
+     */
+
+
+
 //initial variables
 	private Deck main;
 	private Deck hand;

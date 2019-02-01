@@ -1,5 +1,5 @@
 public class A1Q1.java{
-	public static double countPositive(double a1[]){
+	public static int countPositive(double a1[]){
 		int count = 0;
 
 		for(int i =0; i<a1.length;i++){

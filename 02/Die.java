@@ -1,7 +1,13 @@
 /**
-*
-*
-* @author Skyla Thadani 300055455
+* Author: Gregory Mitchell
+* Student number: 300053307
+* Course: ITI 1121-A00
+* Assignment: 1
+
+* Author: Skyla Thadani
+* Student number: 300055455
+* Course: ITI 1121-C00
+* Assignment: 1
 */
 
 import java.util.Random;

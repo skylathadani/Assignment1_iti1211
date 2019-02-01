@@ -20,11 +20,8 @@ public class Game {
      * they must provide a valid meld
      * Objective of the game is to discard all cards
      * 
-     *@param numRanks an integer;
+     * @param numRanks an integer;
      */
-
-
-
 //initial variables
 	private Deck main;
 	private Deck hand;

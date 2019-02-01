@@ -1,3 +1,8 @@
+/**
+*
+*
+* @author Skyla Thadani 300055455
+*/
 public class A1Q2{
 	public static boolean hasLengthTwoRun(double[] ar){
 

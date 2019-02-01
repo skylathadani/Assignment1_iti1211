@@ -1,3 +1,8 @@
+/**
+*
+*
+* @author Skyla Thadani 300055455
+*/
 public class A1Q3{
 
 	public static int getLongestRun(double ar[]){

@@ -1,3 +1,8 @@
+/**
+*
+*
+* @author Skyla Thadani 300055455
+*/
 public class A1Q1.java{
 	public static int countPositive(double a1[]){
 		int count = 0;

@@ -1,3 +1,8 @@
+/**
+*
+*
+* @author Skyla Thadani 300055455
+*/
 public class Card{
 	//create the variables that card objects hold
 	int suit;

@@ -1,3 +1,10 @@
+/**
+*
+*
+* @author Skyla Thadani 300055455
+*/
+
+
 import java.util.Scanner;
 
 public class Game {
